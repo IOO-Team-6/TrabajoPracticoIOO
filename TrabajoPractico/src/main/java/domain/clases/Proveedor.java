@@ -10,7 +10,7 @@ public class Proveedor {
 
     private Cuit cuit;
     private String nombreFantasia;
-    private List<Rubros> rubro;
+    private List<Rubro> rubro;
     private Responsabilidadiva responsabilidadIVA;
     private String razonSocial;
     private Direccion direccion;
@@ -48,7 +48,7 @@ public class Proveedor {
         return nombreFantasia;
     }
 
-    public List<Rubros> getRubro() {
+    public List<Rubro> getRubro() {
         return rubro;
     }
 

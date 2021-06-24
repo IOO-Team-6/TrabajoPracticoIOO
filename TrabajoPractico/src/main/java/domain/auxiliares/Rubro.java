@@ -1,5 +1,5 @@
 package domain.auxiliares;
 
-public class Rubros {
+public class Rubro {
     //TODO;
 }
