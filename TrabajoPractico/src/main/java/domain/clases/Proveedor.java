@@ -23,7 +23,7 @@ public class Proveedor {
     private Double deudaProveedor;
     private Double limiteDeuda;
 
-    public Proveedor(Cuit cuit, String nombreFantasia, Enum responsabilidadIVA, String razonSocial, Direccion direccion, Integer telefono, String correoElectronico, Integer ingresosBrutos, Date inicioActividades, CuentaCorriente cuentaCorriente, Double deudaProveedor, Double limiteDeuda) {
+    public Proveedor(Cuit cuit, String nombreFantasia,  Responsabilidadiva responsabilidadIVA, String razonSocial, Direccion direccion, Integer telefono, String correoElectronico, Integer ingresosBrutos, Date inicioActividades, CuentaCorriente cuentaCorriente, Double deudaProveedor, Double limiteDeuda) {
         this.cuit = cuit;
         this.nombreFantasia = nombreFantasia;
         this.responsabilidadIVA = (Responsabilidadiva) responsabilidadIVA;
