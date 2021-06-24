@@ -1,5 +1,7 @@
 package domain.clases;
 
+import domain.auxiliares.Responsabilidadiva;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,7 +11,7 @@ public class Proveedor {
     private Cuit cuit;
     private String nombreFantasia;
     private List<Rubros> rubro;
-    private Enum responsabilidadIVA;
+    private Responsabilidadiva responsabilidadIVA;
     private String razonSocial;
     private Direccion direccion;
     private Integer telefono;
@@ -24,7 +26,7 @@ public class Proveedor {
     public Proveedor(Cuit cuit, String nombreFantasia, Enum responsabilidadIVA, String razonSocial, Direccion direccion, Integer telefono, String correoElectronico, Integer ingresosBrutos, Date inicioActividades, CuentaCorriente cuentaCorriente, Double deudaProveedor, Double limiteDeuda) {
         this.cuit = cuit;
         this.nombreFantasia = nombreFantasia;
-        this.responsabilidadIVA = responsabilidadIVA;
+        this.responsabilidadIVA = (Responsabilidadiva) responsabilidadIVA;
         this.rubro: new ArrayList<>();
         this.razonSocial = razonSocial;
         this.direccion = direccion;
@@ -50,7 +52,7 @@ public class Proveedor {
         return rubro;
     }
 
-    public Enum getResponsabilidadIVA() {
+    public Responsabilidadiva getResponsabilidadIVA() {
         return responsabilidadIVA;
     }
 
