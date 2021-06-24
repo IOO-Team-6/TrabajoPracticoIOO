@@ -1,4 +1,2 @@
-package domain.controllers;
-
-public class proveedorController {
+package domain.controllers;public class proveedorController {
 }
