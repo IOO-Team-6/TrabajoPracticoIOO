@@ -1,6 +1,5 @@
 package domain.auxiliares;
 
-public enum Responsabilidadiva {
+public class Cuit {
     //TODO;
-
 }

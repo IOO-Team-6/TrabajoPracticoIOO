@@ -1,6 +1,6 @@
 package domain.clases;
 
-import domain.auxiliares.Responsabilidadiva;
+import domain.auxiliares.*;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -27,7 +27,7 @@ public class Proveedor {
         this.cuit = cuit;
         this.nombreFantasia = nombreFantasia;
         this.responsabilidadIVA = (Responsabilidadiva) responsabilidadIVA;
-        this.rubro: new ArrayList<>();
+        this.rubro = new ArrayList<>();
         this.razonSocial = razonSocial;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -35,7 +35,7 @@ public class Proveedor {
         this.ingresosBrutos = ingresosBrutos;
         this.inicioActividades = inicioActividades;
         this.cuentaCorriente = cuentaCorriente;
-        this.certificados: new ArrayList<>();
+        this.certificados = new ArrayList<>();
         this.deudaProveedor = deudaProveedor;
         this.limiteDeuda = limiteDeuda;
     }
@@ -94,5 +94,10 @@ public class Proveedor {
 
     public Double getLimiteDeuda() {
         return limiteDeuda;
+    }
+
+    public boolean soyCuit(Cuit cuit){
+
+
     }
 }
